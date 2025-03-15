@@ -63,7 +63,7 @@ const MobileFarmerStore = ({ products, addToCart, handleQuantityChange, quantiti
               >
                 <div className="h-[55%] w-full flex justify-center items-center p-2">
                   <img
-                    src={product.itemImage || "https://via.placeholder.com/150"}
+                    src={product.itemImage}
                     className="object-contain h-full w-full"
                     alt={product.itemName}
                   />

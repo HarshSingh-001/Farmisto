@@ -62,29 +62,29 @@ const LargerFarmerStore = ({ products, addToCart, handleQuantityChange, quantiti
                 className="bg-gradient-to-br from-green-50 via-green-100 to-green-200 border border-emerald-100 rounded-2xl shadow-sm p-4 flex flex-col items-center text-center transition-all duration-300 hover:shadow-md hover:shadow-emerald-200"
               >
                 <img
-                  src={product.itemImage || "https://via.placeholder.com/150"}
+                  src={product.itemImage}
                   alt={product.itemName}
                   className="w-36 h-36 object-cover mb-4 rounded-md"
                 />
-                <h3 className="text-lg font-bold text-gray-800 mb-2 truncate w-full">
+                <h3 className="text-lg font-bold text-emerald-800 mb-2 truncate w-full">
                   {product.itemName}
                 </h3>
-                <p className="text-md text-gray-600 mb-4">
+                <p className="text-md text-emerald-600 mb-4">
                   Price: ₹{product.itemPrice}/{product.itemUnit.unit}
                 </p>
                 <div className="flex items-center gap-2 mb-4">
                   <button
                     onClick={() => handleQuantityChange(product._id, -1)}
-                    className="bg-gray-100 p-2 rounded-full hover:bg-gray-200"
+                    className="bg-emerald-100 p-2 rounded-full hover:bg-emerald-200"
                   >
                     <FaMinus className="w-4 h-4" />
                   </button>
-                  <span className="px-3 py-1 border rounded-md text-gray-800 text-md">
+                  <span className="px-3 py-1 border border-emerald-800 rounded-md text-emerald-800 text-md">
                     {quantities[product._id] || 1}
                   </span>
                   <button
                     onClick={() => handleQuantityChange(product._id, 1)}
-                    className="bg-gray-100 p-2 rounded-full hover:bg-gray-200"
+                    className="bg-emerald-100 p-2 rounded-full hover:bg-emerald-200"
                   >
                     <FaPlus className="w-4 h-4" />
                   </button>
