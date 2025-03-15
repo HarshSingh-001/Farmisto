@@ -143,7 +143,8 @@ const ProfileSettings = () => {
                 <img
                   src={
                     photoPreview ||
-                    formData.farmerProfilePhoto
+                    formData.farmerProfilePhoto ||
+                    "https://www.strasys.uk/wp-content/uploads/2022/02/Depositphotos_484354208_S.jpg"
                   }
                   alt="Profile Preview"
                   className="w-full h-full rounded-full object-cover border-4 border-[#70942e]"
@@ -179,7 +180,9 @@ const ProfileSettings = () => {
                   onChange={handleChange}
                   disabled={!editFields.farmerName}
                   className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                    !editFields.farmerName ? "cursor-not-allowed opacity-75" : ""
+                    !editFields.farmerName
+                      ? "cursor-not-allowed opacity-75"
+                      : ""
                   }`}
                   placeholder="Your name"
                 />
@@ -208,7 +211,9 @@ const ProfileSettings = () => {
                     maxLength={10}
                     disabled={!editFields.farmerMobile}
                     className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                      !editFields.farmerMobile ? "cursor-not-allowed opacity-75" : ""
+                      !editFields.farmerMobile
+                        ? "cursor-not-allowed opacity-75"
+                        : ""
                     }`}
                     placeholder="10-digit mobile"
                   />
@@ -233,7 +238,9 @@ const ProfileSettings = () => {
                     onChange={handleChange}
                     disabled={!editFields.farmerPassword}
                     className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                      !editFields.farmerPassword ? "cursor-not-allowed opacity-75" : ""
+                      !editFields.farmerPassword
+                        ? "cursor-not-allowed opacity-75"
+                        : ""
                     }`}
                     placeholder="New password"
                   />
@@ -261,7 +268,9 @@ const ProfileSettings = () => {
                   onChange={handleChange}
                   disabled={!editFields.farmerAddress}
                   className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                    !editFields.farmerAddress ? "cursor-not-allowed opacity-75" : ""
+                    !editFields.farmerAddress
+                      ? "cursor-not-allowed opacity-75"
+                      : ""
                   }`}
                   placeholder="Street address"
                 />
@@ -289,7 +298,9 @@ const ProfileSettings = () => {
                     onChange={handleChange}
                     disabled={!editFields.farmerCity}
                     className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                      !editFields.farmerCity ? "cursor-not-allowed opacity-75" : ""
+                      !editFields.farmerCity
+                        ? "cursor-not-allowed opacity-75"
+                        : ""
                     }`}
                     placeholder="City name"
                   />
@@ -314,7 +325,9 @@ const ProfileSettings = () => {
                     onChange={handleChange}
                     disabled={!editFields.farmerStateZip}
                     className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                      !editFields.farmerStateZip ? "cursor-not-allowed opacity-75" : ""
+                      !editFields.farmerStateZip
+                        ? "cursor-not-allowed opacity-75"
+                        : ""
                     }`}
                     placeholder="State, ZIP"
                   />
@@ -342,7 +355,9 @@ const ProfileSettings = () => {
                   onChange={handleChange}
                   disabled={!editFields.farmerCountry}
                   className={`w-full px-3 py-2 sm:px-4 sm:py-2 bg-[#f5f0e1] border border-[#d1c4a5] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#8a7a4d]/30 focus:border-[#8a7a4d] transition-all ${
-                    !editFields.farmerCountry ? "cursor-not-allowed opacity-75" : ""
+                    !editFields.farmerCountry
+                      ? "cursor-not-allowed opacity-75"
+                      : ""
                   }`}
                   placeholder="Country name"
                 />
